@@ -8,7 +8,7 @@ int main() {
     
     while(i <= n) {
         printf("i: %d \n", i);
-        i = i + 1;
+        i++;
     }
 
     printf("FIM!");
