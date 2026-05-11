@@ -1,1 +1,1 @@
-## Códigos da disciplina de "FUP"(Fundamentos de Programação) - 2026.1
+# Códigos da disciplina de Fundamentos de Programação(UFC) - 2026.1
