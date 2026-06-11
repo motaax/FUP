@@ -1,14 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    char nome1[100], nome2[100], nome3[100];
-    scanf("%s", nome1);
-    scanf("%s", nome2);
-    scanf("%s", nome3);
+    char nomes[3][50];
+    
+    printf("Digite tres nomes: \n");
+    for(int i = 0; i < 3; i++) {
+        scanf(" %s", nomes[i]);
+    }
 
-    printf("%s\n", nome3);
-    printf("%s\n", nome2);
-    printf("%s\n", nome1);
+    for(int i = 3; i >= 0; i--) {
+        printf("%s \n", nomes[i]);
+    }
 
     return 0;
 }
