@@ -10,13 +10,14 @@ char* escolher(Restaurante r[], int n) {
     int melhor = 0;
 
     for (int i = 1; i < n; i++) {
+
         if (r[i].pontos > r[melhor].pontos) {
             melhor = i;
         }
-        else if (r[i].pontos == r[melhor].pontos) {
-            if (strcmp(r[i].nome, r[melhor].nome) < 0) {
-                melhor = i;
-            }
+
+        else if (r[i].pontos == r[melhor].pontos &&
+                 strcmp(r[i].nome, r[melhor].nome) < 0) {
+            melhor = i;
         }
     }
 
@@ -30,7 +31,7 @@ int main() {
     Restaurante r[N];
 
     for (int i = 0; i < N; i++) {
-        scanf("%s %d", r[i].nome, &r[i].pontos);
+        scanf("%20s %d", r[i].nome, &r[i].pontos);
     }
 
     printf("%s\n", escolher(r, N));
